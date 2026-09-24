@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             onClick={() => handleNavClick('contact')}
             className="px-4 py-2.5 text-xs font-bold rounded-lg bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#F8F8F8]/30 transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-lg whitespace-nowrap"
           >
-            <span>Nhận Báo Giá</span>
+            <span>Liên Hệ</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </motion.button>
 
@@ -104,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-[#082820] border-b border-[#083028] px-6 py-6 space-y-3">
           <div className="text-xs font-mono text-[#8caaa0] pb-3 border-b border-[#083028]">
-            CHỌN TRANG XEM CHI TIẾT
+            KHÁM PHÁ PORTFOLIO
           </div>
           <div className="grid grid-cols-2 gap-2 pt-2">
             {navItems.map((item) => (
