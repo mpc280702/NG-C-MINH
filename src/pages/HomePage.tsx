@@ -80,7 +80,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
                 transition={{ duration: 0.7, delay: 0.3 }}
                 className="text-base sm:text-lg text-[#c0d3cb] font-light leading-relaxed max-w-2xl"
               >
-                {DESIGNER_INFO.tagline} Với hơn 7 năm thực chiến, tôi kiến tạo những sản phẩm thiết kế có sức sống bền bỉ qua năm tháng, cân bằng giữa thẩm mỹ nghệ thuật và hiệu quả kinh doanh.
+                {DESIGNER_INFO.tagline} Với hơn 5 năm thực chiến, tôi kiến tạo những sản phẩm thiết kế có sức sống bền bỉ qua năm tháng, cân bằng giữa thẩm mỹ nghệ thuật và hiệu quả kinh doanh.
               </motion.p>
 
               {/* CTAs with hover effects */}
@@ -120,7 +120,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
               >
                 <div>
                   <div className="text-3xl font-display font-black text-[#F8F8F8]">
-                    <Counter end={7} suffix="+" />
+                    <Counter end={5} suffix="+" />
                   </div>
                   <div className="text-xs font-mono text-[#8caaa0] uppercase mt-0.5">
                     Năm Kinh Nghiệm
@@ -165,6 +165,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
                     aspectClass="aspect-4/3"
                     fallbackTitle={PROJECTS[0].title}
                     fallbackCategory={PROJECTS[0].categoryLabel}
+                    loading="eager"
+                    fetchPriority="high"
                     className="group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute top-3.5 left-3.5 px-3 py-1 rounded-md bg-[#082820]/90 backdrop-blur-md text-[11px] font-mono text-[#F8F8F8] border border-[#F8F8F8]/10 flex items-center gap-1.5 shadow-md">
