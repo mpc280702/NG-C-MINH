@@ -9,7 +9,8 @@ export const CustomCursor: React.FC = () => {
 
   useEffect(() => {
     // Disable on touch devices
-    if (window.matchMedia('(pointer: coarse)').matches) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (window.matchMedia('(pointer: coarse)').matches || reduceMotion) {
       setIsTouchDevice(true);
       return;
     }
