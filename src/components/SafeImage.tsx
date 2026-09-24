@@ -49,8 +49,8 @@ export const SafeImage: React.FC<SafeImageProps> = ({
         </div>
 
         <div className="flex items-center justify-between text-[10px] font-mono text-[#8caaa0] border-t border-[#083028] pt-3 z-10">
-          <span>FORM · BALANCE · TONE</span>
-          <span>EST. 2026</span>
+          <span>FORM · TYPE · TONE</span>
+          <span>PORTFOLIO</span>
         </div>
       </div>
     );
