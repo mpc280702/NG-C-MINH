@@ -37,12 +37,12 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           onClick={() => handleNavClick('home')}
           className="text-left group cursor-pointer"
         >
-          <div className="text-xl sm:text-2xl font-display font-black tracking-tight text-[#F8F8F8] uppercase flex items-center gap-2">
-            <span>Minh Ngọc</span>
+          <div className="text-xl sm:text-2xl font-display font-black tracking-tight text-[#F8F8F8] uppercase flex items-center gap-1.5">
+            <span>CAO NGỌC MINH</span>
             <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
           </div>
           <p className="text-[11px] font-mono tracking-wider text-[#c0d3cb] uppercase">
-            Graphic Designer & Art Director
+            Graphic Designer
           </p>
         </motion.button>
 

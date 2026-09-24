@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     { id: 'home', label: 'Trang Chủ' },
     { id: 'works', label: 'Dự Án Nổi Bật' },
     { id: 'services', label: 'Dịch Vụ Thiết Kế' },
-    { id: 'about', label: 'Về Minh Ngọc' },
+    { id: 'about', label: 'Về Cao Ngọc Minh' },
     { id: 'skills', label: 'Kỹ Năng & Phần Mềm' },
     { id: 'contact', label: 'Liên Hệ Báo Giá' },
   ];
@@ -54,15 +54,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               }}
               className="text-left cursor-pointer group"
             >
-              <div className="text-2xl font-display font-black tracking-tight uppercase text-[#F8F8F8]">
-                Minh Ngọc
+              <div className="text-2xl font-display font-black tracking-tight uppercase text-[#F8F8F8] flex items-center gap-1.5">
+                <span>CAO NGỌC MINH</span>
+                <span className="text-[#10b981]">.</span>
               </div>
               <p className="text-xs font-mono text-[#8caaa0] mt-1">
-                Graphic Design & Art Direction Studio
+                Graphic Design & Creative Studio
               </p>
             </button>
             <p className="text-xs text-[#c0d3cb] max-w-sm font-light leading-relaxed">
-              Chuyên sâu về Brand Identity, Thiết kế Bao bì cao cấp và Ấn phẩm xuất bản với ngôn ngữ thị giác chuẩn mực.
+              Chuyên sâu Brand Identity, Key Visual, Hệ Thống Ấn Phẩm Quảng Cáo & Thiết Kế Bao Bì.
             </p>
           </div>
 
@@ -95,18 +96,26 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="space-y-1.5 text-xs font-mono">
               <a
                 href={`mailto:${DESIGNER_INFO.email}`}
-                className="block text-[#c0d3cb] hover:text-[#F8F8F8] hover:underline truncate"
+                className="block text-[#c0d3cb] hover:text-[#10b981] hover:underline truncate"
               >
                 {DESIGNER_INFO.email}
               </a>
               <a
-                href={`tel:${DESIGNER_INFO.phone}`}
-                className="block text-[#c0d3cb] hover:text-[#F8F8F8] hover:underline"
+                href={`tel:${DESIGNER_INFO.phoneTel}`}
+                className="block text-[#c0d3cb] hover:text-[#10b981] hover:underline"
               >
                 {DESIGNER_INFO.phone}
               </a>
+              <a
+                href={DESIGNER_INFO.zaloUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="block text-[#10b981] hover:underline font-bold"
+              >
+                Chat Zalo: {DESIGNER_INFO.phone}
+              </a>
               <div className="pt-2 flex flex-wrap gap-2">
-                {DESIGNER_INFO.socials.slice(0, 3).map((s, idx) => (
+                {DESIGNER_INFO.socials.map((s, idx) => (
                   <a
                     key={idx}
                     href={s.url}
@@ -128,17 +137,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="flex flex-wrap items-center gap-6">
             <div>
               <span className="text-[#8caaa0] uppercase">Vị trí: </span>
-              <span className="text-[#F8F8F8] font-semibold">Sài Gòn (UTC+7)</span>
+              <span className="text-[#F8F8F8] font-semibold">Hà Nội (Việt Nam)</span>
             </div>
             <div>
-              <span className="text-[#8caaa0] uppercase">Studio Time: </span>
+              <span className="text-[#8caaa0] uppercase">Hanoi Time: </span>
               <span className="text-[#10b981] font-bold tabular-nums">
                 {saigonTime || '14:30:00'}
               </span>
             </div>
             <div>
               <span className="text-[#8caaa0] uppercase">Nhận dự án: </span>
-              <span className="text-[#10b981] font-semibold">Quý 4 / 2026</span>
+              <span className="text-[#10b981] font-semibold">Sẵn sàng nhận vị trí mới &amp; dự án</span>
             </div>
           </div>
 
@@ -155,10 +164,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom copyright row */}
         <div className="pt-8 border-t border-[#083028] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#8caaa0]">
           <div>
-            © {new Date().getFullYear()} Minh Ngọc. Toàn bộ hình ảnh & thiết kế được bảo vệ bản quyền.
+            © {new Date().getFullYear()} Cao Ngọc Minh. Toàn bộ hình ảnh &amp; thiết kế được bảo vệ bản quyền.
           </div>
           <div className="flex items-center gap-3">
-            <span>Palette: Emerald & Forest Architecture</span>
+            <span>Palette: Emerald &amp; Forest Architecture</span>
             <span aria-hidden="true">·</span>
             <span>Portfolio Edition 2026</span>
           </div>

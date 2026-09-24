@@ -17,14 +17,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="flex items-center gap-2 text-xs font-mono text-[#8caaa0] uppercase tracking-wider mb-2">
             <span className="cursor-pointer hover:text-[#F8F8F8]" onClick={() => onNavigate('home')}>Trang Chủ</span>
             <span>/</span>
-            <span className="text-[#F8F8F8]">Về Minh Ngọc</span>
+            <span className="text-[#F8F8F8]">Về Cao Ngọc Minh</span>
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-6xl text-[#F8F8F8] tracking-tight">
             Nhà Thiết Kế & Triết Lý Thị Giác
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#c0d3cb] font-light max-w-2xl leading-relaxed">
-            Hành trình hơn 7 năm theo đuổi nghệ thuật đồ họa chuẩn mực, nơi kiến trúc hình học gặp gỡ cảm xúc xúc giác tinh tế.
+            Hành trình sáng tạo nghệ thuật đồ họa chuyên sâu, nơi kiến trúc thương hiệu gặp gỡ ngôn ngữ thị giác hiện đại.
           </p>
         </div>
 
@@ -34,21 +34,21 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 space-y-6">
             <div className="p-3.5 rounded-3xl bg-[#083028] border border-[#003828] shadow-2xl relative">
               <SafeImage
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=900&auto=format&fit=crop"
-                alt="Minh Ngọc Graphic Designer"
+                src={DESIGNER_INFO.portraitUrl}
+                alt="Cao Ngọc Minh Graphic Designer"
                 aspectClass="aspect-4/5"
-                fallbackTitle="Minh Ngọc"
-                fallbackCategory="Art Director & Designer"
-                className="rounded-2xl"
+                fallbackTitle="Cao Ngọc Minh"
+                fallbackCategory="Graphic Designer"
+                className="rounded-2xl object-cover"
               />
 
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-[#082820]/90 backdrop-blur-md border border-[#F8F8F8]/10 text-white flex items-center justify-between">
                 <div>
                   <div className="text-xs font-mono font-bold tracking-wider">
-                    MINH NGỌC
+                    CAO NGỌC MINH
                   </div>
                   <div className="text-[11px] text-[#c0d3cb]">
-                    Saigon, Vietnam · Independent Studio
+                    Hanoi, Vietnam · Graphic Designer
                   </div>
                 </div>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#003828] border border-[#10b981]/40 text-[#10b981] font-semibold">
@@ -60,15 +60,15 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="p-6 rounded-2xl bg-[#082820] border border-[#083028] space-y-3 text-xs font-mono text-[#c0d3cb]">
               <div className="flex items-center gap-2.5">
                 <GraduationCap className="w-4 h-4 text-[#10b981] shrink-0" />
-                <span>Tốt nghiệp Cử nhân Thiết kế Đồ họa — ĐH Mỹ Thuật TP.HCM</span>
+                <span>Chuyên ngành Graphic Design &amp; Visual Communication</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <MapPin className="w-4 h-4 text-[#10b981] shrink-0" />
-                <span>Studio: Quận 1, TP. Hồ Chí Minh (Gặp mặt theo lịch hẹn)</span>
+                <span>Địa điểm: Số 27, P. Thụy Phương, Q. Bắc Từ Liêm, TP. Hà Nội</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Award className="w-4 h-4 text-[#10b981] shrink-0" />
-                <span>Thành viên Ban Giám Khảo Creative Awards Vietnam 2025</span>
+                <span>Sẵn sàng On-site tại Hà Nội &amp; Remote toàn quốc</span>
               </div>
             </div>
           </div>
