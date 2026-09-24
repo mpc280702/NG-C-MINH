@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mpc280702.github.io/NG-C-MINH/sitemap.xml
