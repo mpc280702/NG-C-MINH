@@ -144,6 +144,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
                     aspectClass="aspect-4/3"
                     fallbackTitle={PROJECTS[0].title}
                     fallbackCategory={PROJECTS[0].categoryLabel}
+                    loading="eager"
+                    fetchPriority="high"
                     className="group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute top-3.5 left-3.5 px-3 py-1 rounded-md bg-[#082820]/90 backdrop-blur-md text-[11px] font-mono text-[#F8F8F8] border border-[#F8F8F8]/10 flex items-center gap-1.5 shadow-md">
