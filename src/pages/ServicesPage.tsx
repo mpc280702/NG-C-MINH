@@ -29,10 +29,10 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-6xl text-[#F8F8F8] tracking-tight">
-            Năng Lực & Dịch Vụ Cung Cấp
+            Dịch Vụ Thiết Kế
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#c0d3cb] font-light max-w-2xl leading-relaxed">
-            Mỗi gói dịch vụ được thiết kế chuyên sâu nhằm giải quyết triệt để bài toán nhận diện thương hiệu, bao bì xúc giác và tối ưu hóa quy trình in ấn thực tế.
+            Các dịch vụ tập trung vào những đầu việc tôi thường triển khai: nhận diện, bao bì, ấn phẩm và hình ảnh digital. Phạm vi sẽ được chốt theo mục tiêu và nhu cầu thực tế.
           </p>
         </motion.div>
 
@@ -104,7 +104,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
                 {/* Detailed Breakdown steps */}
                 <div className="pt-4 space-y-4">
                   <div className="text-xs font-mono uppercase tracking-wider text-[#8caaa0] font-bold">
-                    Quy Trình Triển Khai Chuyên Sâu:
+                    Quy Trình Thực Hiện:
                   </div>
                   <div className="space-y-3">
                     {activeService.deliverablesDetailed.map((step, sIdx) => (
@@ -154,10 +154,10 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
                   <div className="mt-6 pt-6 border-t border-[#083028] text-xs text-[#c0d3cb] space-y-2 font-mono">
                     <div className="flex items-center gap-2 text-[#10b981]">
                       <ShieldCheck className="w-4 h-4 shrink-0" />
-                      <span>Cam kết bảo hành file &amp; hỗ trợ xưởng in 100%</span>
+                      <span>Hỗ trợ sau bàn giao trong phạm vi công việc đã thống nhất</span>
                     </div>
                     <p className="font-sans font-light">
-                      Mọi thắc mắc kỹ thuật từ xưởng in về thông số màu CMYK, khuôn bế hay bù hao xén đều được trực tiếp tôi hỗ trợ giải quyết.
+                      Tôi có thể hỗ trợ trao đổi về file, màu sắc, kích thước và các yêu cầu kỹ thuật khi dự án có bước sản xuất hoặc in ấn.
                     </p>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
                     onClick={() => onNavigate('contact')}
                     className="w-full py-3.5 px-6 rounded-xl bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#F8F8F8]/30 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer shadow-xl transition-all focus-visible:ring-2 focus-visible:ring-[#10b981]"
                   >
-                    <span>Nhận Báo Giá Gói Này</span>
+                    <span>Trao Đổi Về Dự Án</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </button>
                 </div>
