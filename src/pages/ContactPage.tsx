@@ -43,15 +43,52 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
     setTimeout(() => setCopiedEmail(false), 2500);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.email) return;
+    if (!formData.name.trim() || !formData.email.trim()) return;
 
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    const payload = {
+      'Họ và tên': formData.name.trim(),
+      'Email người gửi': formData.email.trim(),
+      'Số điện thoại / Zalo': formData.phone.trim(),
+      'Thương hiệu / Doanh nghiệp': formData.company.trim(),
+      'Hạng mục quan tâm': selectedType,
+      'Ngân sách dự kiến': selectedBudget,
+      'Nội dung yêu cầu': formData.message.trim(),
+      '_subject': `[Portfolio] ${selectedType} — ${formData.name.trim()}`,
+      '_replyto': formData.email.trim(),
+      '_template': 'table',
+      '_captcha': 'false',
+    };
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/mngoc12851@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || !(result.success === true || result.success === 'true')) {
+        throw new Error(result.message || 'Không thể gửi biểu mẫu.');
+      }
+
       setSubmitted(true);
-    }, 600);
+    } catch (error) {
+      console.error('Contact form error:', error);
+      window.location.href =
+        `mailto:mngoc12851@gmail.com?subject=${encodeURIComponent(payload._subject)}&body=${encodeURIComponent(
+          `Họ tên: ${payload['Họ và tên']}\\nEmail: ${payload['Email người gửi']}\\nĐiện thoại: ${payload['Số điện thoại / Zalo']}\\nDoanh nghiệp: ${payload['Thương hiệu / Doanh nghiệp']}\\nHạng mục: ${payload['Hạng mục quan tâm']}\\nNgân sách: ${payload['Ngân sách dự kiến']}\\n\\n${payload['Nội dung yêu cầu']}`
+        )}`;
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -256,7 +293,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   <h3 className="font-display font-black text-2xl sm:text-3xl text-[#F8F8F8]">
                     Đã Tiếp Nhận Thông Tin!
                   </h3>
-                  <p className="text-sm sm:text-base text-[#c0d3cb] max-w-md mx-auto leading-relaxed font-light">
+                  <p aria-live="polite" className="text-sm sm:text-base text-[#c0d3cb] max-w-md mx-auto leading-relaxed font-light">
                     Cảm ơn bạn <span className="font-bold text-[#F8F8F8]">{formData.name}</span>. Tôi đã nhận được yêu cầu về dịch vụ <span className="font-bold text-[#10b981]">{selectedType}</span> và sẽ gửi phản hồi chi tiết tới email <span className="font-mono font-bold text-[#F8F8F8]">{formData.email}</span> trong vòng 24 giờ.
                   </p>
                   <div className="pt-4">
