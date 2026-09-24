@@ -119,10 +119,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
                 <div className="w-px h-8 bg-[#083028] hidden sm:block" />
                 <div>
                   <div className="text-3xl font-display font-black text-[#F8F8F8]">
-                    {DESIGNER_INFO.clientSatisfaction}
+                    {DESIGNER_INFO.workModes}
                   </div>
                   <div className="text-xs font-mono text-[#8caaa0] uppercase mt-0.5">
-                    Tận Tâm &amp; Chuẩn Xác
+                    Print + Digital
                   </div>
                 </div>
               </div>
