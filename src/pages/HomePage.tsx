@@ -11,7 +11,7 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject }) => {
-  const featuredProjects = PROJECTS.slice(0, 4);
+  const featuredProjects = PROJECTS.filter((project) => project.featured).slice(0, 4);
 
   return (
     <div className="bg-[#003028] text-[#F8F8F8] overflow-hidden">
