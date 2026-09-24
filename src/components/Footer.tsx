@@ -34,11 +34,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
   const pages: { id: PageRoute; label: string }[] = [
     { id: 'home', label: 'Trang Chủ' },
-    { id: 'works', label: 'Dự Án Nổi Bật' },
-    { id: 'services', label: 'Dịch Vụ Thiết Kế' },
-    { id: 'about', label: 'Về Cao Ngọc Minh' },
-    { id: 'skills', label: 'Kỹ Năng & Phần Mềm' },
-    { id: 'contact', label: 'Liên Hệ Báo Giá' },
+    { id: 'works', label: 'Dự Án' },
+    { id: 'services', label: 'Dịch Vụ' },
+    { id: 'about', label: 'Về Tôi' },
+    { id: 'skills', label: 'Kỹ Năng' },
+    { id: 'contact', label: 'Liên Hệ' },
   ];
 
   return (
@@ -59,11 +59,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <span className="text-[#10b981]">.</span>
               </div>
               <p className="text-xs font-mono text-[#8caaa0] mt-1">
-                Graphic Design & Creative Studio
+                Graphic Designer · Digital Creator
               </p>
             </button>
             <p className="text-xs text-[#c0d3cb] max-w-sm font-light leading-relaxed">
-              Chuyên sâu Brand Identity, Key Visual, Hệ Thống Ấn Phẩm Quảng Cáo & Thiết Kế Bao Bì.
+              Brand Identity · Packaging · Editorial · Key Visual · Digital
             </p>
           </div>
 
@@ -146,8 +146,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <div>
-              <span className="text-[#8caaa0] uppercase">Nhận dự án: </span>
-              <span className="text-[#10b981] font-semibold">Sẵn sàng nhận vị trí mới &amp; dự án</span>
+              <span className="text-[#8caaa0] uppercase">Trạng thái: </span>
+              <span className="text-[#10b981] font-semibold">Sẵn sàng trao đổi</span>
             </div>
           </div>
 
@@ -167,9 +167,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             © {new Date().getFullYear()} Cao Ngọc Minh. Toàn bộ hình ảnh &amp; thiết kế được bảo vệ bản quyền.
           </div>
           <div className="flex items-center gap-3">
-            <span>Palette: Emerald &amp; Forest Architecture</span>
+            <span>Visual system: Emerald / Forest</span>
             <span aria-hidden="true">·</span>
-            <span>Portfolio Edition 2026</span>
+            <span>Portfolio 2026</span>
           </div>
         </div>
       </div>
