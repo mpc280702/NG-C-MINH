@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Roboto", sans-serif;
+  --font-sans: "Roboto", sans-serif;
+  --font-serif: "Roboto", sans-serif;
+  --font-mono: "Roboto Mono", "Roboto", monospace;
+
+  /* User Specified Palette */
+  --color-brand-primary: #003828;
+  --color-brand-secondary: #083028;
+  --color-brand-dark: #003028;
+  --color-brand-shadow: #082820;
+  --color-brand-white: #F8F8F8;
+  --color-brand-black: #101010;
+}
+
+:root {
+  --color-primary: #003828;
+  --color-secondary: #083028;
+  --color-dark: #003028;
+  --color-shadow: #082820;
+  --color-white: #F8F8F8;
+  --color-black: #101010;
+
+  --bg-main: #003028;
+  --bg-card: #083028;
+  --bg-elevated: #003828;
+  --bg-shadow: #082820;
+  --text-white: #F8F8F8;
+  --text-dim: #c0d3cb;
+  --text-muted: #8caaa0;
+  --border-subtle: rgba(248, 248, 248, 0.12);
+  --border-strong: rgba(248, 248, 248, 0.22);
+  --accent-glow: rgba(0, 56, 40, 0.5);
+  --accent-vibrant: #10b981;
+}
+
+/* Force Roboto globally across all HTML elements */
+*, *::before, *::after {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display, .font-editorial {
+  font-family: "Roboto", sans-serif;
+}
+
+code, kbd, samp, pre, .font-mono {
+  font-family: "Roboto Mono", "Roboto", monospace;
+}
+
+/* Custom scrollbar using specified colors */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-shadow);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}

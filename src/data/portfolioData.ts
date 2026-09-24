@@ -1,0 +1,469 @@
+import { Project, Award, Service, ToolSkill } from '../types/portfolio';
+
+export const DESIGNER_INFO = {
+  name: 'MINH NGỌC',
+  role: 'Graphic Designer & Art Director',
+  tagline: 'Định hình bộ nhận diện thương hiệu, bao bì xúc giác & ấn phẩm xuất bản với ngôn ngữ thị giác chuẩn mực.',
+  bio: 'Nhà thiết kế đồ họa độc lập với hơn 7 năm kinh nghiệm chuyên sâu trong việc kiến tạo bản sắc thị giác, bao bì cao cấp và ấn phẩm in ấn cho các thương hiệu phong cách sống, ẩm thực, thời trang và nghệ thuật.',
+  philosophy: 'Thiết kế không chỉ đơn thuần là việc làm đẹp bề mặt. Đó là sự giao thoa chuẩn xác giữa lý tính kiến trúc và cảm xúc xúc giác, giúp thương hiệu lưu lại dấu ấn lâu bền trong tâm trí khách hàng.',
+  email: 'mngoc1285l@gmail.com',
+  phone: '+84 (0) 908 678 910',
+  zalo: '0908678910',
+  location: 'Quận 1, TP. Hồ Chí Minh & Remote Toàn Cầu',
+  availability: 'Sẵn sàng nhận dự án mới',
+  experienceYears: '7+',
+  completedProjects: '58+',
+  clientSatisfaction: '100%',
+  socials: [
+    { name: 'Behance', url: 'https://behance.net', handle: '@minhngocdesign' },
+    { name: 'Instagram', url: 'https://instagram.com', handle: '@ngoc.artdir' },
+    { name: 'ReadCV', url: 'https://read.cv', handle: 'minhngoc' },
+    { name: 'Dribbble', url: 'https://dribbble.com', handle: '@minhngoc' },
+    { name: 'LinkedIn', url: 'https://linkedin.com', handle: 'minh-ngoc-design' },
+  ],
+};
+
+export const TOOL_SKILLS: ToolSkill[] = [
+  {
+    name: 'Adobe Illustrator',
+    level: 98,
+    category: 'software',
+    description: 'Vẽ vector chính xác, thiết kế logo, biểu trưng, hệ thống họa tiết và bản vẽ kỹ thuật khuôn bế (die-cut).',
+  },
+  {
+    name: 'Adobe Photoshop',
+    level: 95,
+    category: 'software',
+    description: 'Xử lý hình ảnh chuyên sâu, hiệu chỉnh màu sắc in ấn CMYK, tạo phối cảnh 3D mockups sản phẩm chân thực.',
+  },
+  {
+    name: 'Adobe InDesign',
+    level: 94,
+    category: 'software',
+    description: 'Dàn trang sách, tạp chí, hồ sơ năng lực (Profile), quản lý hệ thống lưới (grid) và nhịp điệu typography chuẩn mực.',
+  },
+  {
+    name: 'Figma & UI Systems',
+    level: 90,
+    category: 'software',
+    description: 'Xây dựng cẩm nang thương hiệu kỹ thuật số (Digital Brand Guidelines), hệ thống icon và giao diện web.',
+  },
+  {
+    name: 'After Effects',
+    level: 82,
+    category: 'software',
+    description: 'Chuyển động logo (Logo Animation), key visual video ngắn và đồ họa mạng xã hội sinh động.',
+  },
+  {
+    name: 'Brand Identity Systems',
+    level: 96,
+    category: 'discipline',
+    description: 'Định vị thương hiệu, sáng tạo câu chuyện thị giác, quy chuẩn màu sắc và hệ thống nhận diện cốt lõi.',
+  },
+  {
+    name: 'Packaging & Die-cut',
+    level: 94,
+    category: 'discipline',
+    description: 'Nghiên cứu kết cấu hộp, chai lọ, nhãn dán, kỹ thuật ép kim, dập nổi và chọn lựa chất liệu giấy in.',
+  },
+  {
+    name: 'Typography & Editorial',
+    level: 95,
+    category: 'discipline',
+    description: 'Nghệ thuật chữ ứng dụng, phân cấp thị giác (hierarchy) và tỷ lệ khoảng trắng theo trường phái Thụy Sĩ.',
+  },
+  {
+    name: 'Print Craft & Prepress',
+    level: 92,
+    category: 'discipline',
+    description: 'Quản lý thông số màu Pantone / CMYK, kiểm soát rủi ro in ấn và trực tiếp giám sát tại xưởng in.',
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    id: 'kanso-coffee',
+    title: 'Kanso Roastery & Cafe',
+    subtitle: 'Bộ nhận diện thương hiệu và bao bì cà phê đặc sản thủ công cao cấp',
+    client: 'Kanso Coffee Roasters (Saigon / Da Lat)',
+    category: 'branding',
+    categoryLabel: 'Nhận Diện Thương Hiệu',
+    year: '2025',
+    aspect: 'wide',
+    featured: true,
+    coverImage: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=1200&auto=format&fit=crop',
+    brief: 'Kanso là thương hiệu cà phê specialty hướng tới tinh thần tối giản mộc mạc kết hợp hạt Robusta cao cấp Việt Nam. Dự án yêu cầu hệ thống logo độc bản, nhãn dán túi cà phê có phân loại màu sắc vùng miền và ấn phẩm bao bì quà tặng mang tính bền vững.',
+    solution: 'Thiết kế bộ chữ wordmark thanh mảnh với nét cắt lấy cảm hứng từ cấu trúc hạt cà phê, kết hợp hệ thống màu đất nung, giấy kraft mộc và kỹ thuật ép kim dập chìm trên nhãn lon nhôm.',
+    deliverables: [
+      'Logo & Hệ thống biểu trưng tùy chỉnh',
+      'Thiết kế nhãn & bao bì túi cà phê (250g & 500g)',
+      'Menu quán & Ly takeaway thân thiện môi trường',
+      'Bộ cẩm nang thương hiệu (Brand Guidelines)',
+    ],
+    tokens: [
+      { name: 'Đất Nung Nung', value: '#A8573A', type: 'color' },
+      { name: 'Giấy Kraft Mộc', value: '#E7DFD5', type: 'color' },
+      { name: 'Hạt Rang Đậm', value: '#241F1C', type: 'color' },
+      { name: 'Phông Tiêu Đề', value: 'Syne ExtraBold', type: 'font' },
+      { name: 'Phông Nội Dung', value: 'Plus Jakarta Sans', type: 'font' },
+    ],
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Bao bì túi cà phê thủ công với nhãn dập gân dập chìm',
+        type: 'image',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Ly giấy takeaway và bộ ấn phẩm văn phòng phẩm cho cửa hàng flagship',
+        type: 'image',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Chi tiết tem nhãn phân loại nguồn gốc nông trường cà phê Cầu Đất',
+        type: 'image',
+      },
+    ],
+    testimonial: {
+      quote: 'Minh Ngọc đã truyền tải trọn vẹn triết lý mộc mạc nhưng tinh tế của Kanso. Doanh số bán lẻ và độ nhận diện quán tăng vọt sau khi ra mắt diện mạo mới.',
+      author: 'Trần Hoàng Lâm',
+      role: 'Đồng sáng lập',
+      company: 'Kanso Roastery',
+    },
+  },
+  {
+    id: 'aura-botanicals',
+    title: 'Aura Botanicals Skincare',
+    subtitle: 'Hệ thống nhận diện mỹ phẩm hữu cơ và bao bì hộp quà cao cấp',
+    client: 'Aura Cosmetics (Singapore / TP. HCM)',
+    category: 'packaging',
+    categoryLabel: 'Bao Bì Sản Phẩm',
+    year: '2025',
+    aspect: 'portrait',
+    featured: true,
+    coverImage: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop',
+    brief: 'Tái định vị toàn diện thương hiệu mỹ phẩm thuần chay phân khúc cao cấp, thể hiện được tính y khoa chính xác hòa quyện cùng sự tinh khiết từ thảo mộc thiên nhiên.',
+    solution: 'Phát triển phông chữ serif tùy chỉnh với các đường cong mượt mà, bao bì chai lọ thủy tinh màu hổ phách mờ cùng hộp giấy cotton ép kim vàng mờ và dập nổi không mực (blind debossing).',
+    deliverables: [
+      'Bộ nhận diện thương hiệu cốt lõi',
+      'Quy chuẩn bao bì chai lọ serum & kem dưỡng',
+      'Hộp quà tặng giới hạn (Limited Gift Box)',
+      'Hình ảnh 3D mockup & Hướng dẫn in ấn',
+    ],
+    tokens: [
+      { name: 'Xanh Lá Thảo Mộc', value: '#2E473B', type: 'color' },
+      { name: 'Trắng Ngà Tự Nhiên', value: '#F6F3ED', type: 'color' },
+      { name: 'Vàng Kim Mờ', value: '#C6A15B', type: 'color' },
+      { name: 'Serif Cao Cấp', value: 'Instrument Serif Italic', type: 'font' },
+    ],
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Bộ sản phẩm dưỡng da Aura trên bệ đá travertine',
+        type: 'image',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1608248597359-577d468175d6?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Chi tiết hộp giấy ép kim và dập nổi logo biểu trưng giọt sương',
+        type: 'image',
+      },
+    ],
+    testimonial: {
+      quote: 'Cách phối màu và chất liệu in ấn của Ngọc mang đến sự sang trọng chuẩn mực mà không cần phô trương. Sản phẩm xuất hiện trên kệ là khách hàng nhận ra ngay.',
+      author: 'Maya Vũ',
+      role: 'Giám đốc Thương hiệu',
+      company: 'Aura Cosmetics',
+    },
+  },
+  {
+    id: 'monolith-magazine',
+    title: 'Tạp Chí Kiến Trúc MONOLITH',
+    subtitle: 'Tuyển tập chuyên đề kiến trúc bê tông thô mộc và không gian đô thị',
+    client: 'Monolith Press (Hà Nội / Berlin)',
+    category: 'editorial',
+    categoryLabel: 'Ấn Phẩm & Sách',
+    year: '2024',
+    aspect: 'portrait',
+    featured: true,
+    coverImage: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop',
+    brief: 'Thiết kế cuốn sách bìa cứng 320 trang tổng hợp các công trình kiến trúc Brutalism và hiện đại tại Đông Nam Á, đòi hỏi hệ thống lưới đồ họa chặt chẽ và nhịp điệu dàn trang tương xứng với các công trình quy mô.',
+    solution: 'Áp dụng hệ lưới 12 cột bất đối xứng kiểu Thụy Sĩ, gáy sách bọc vải thô dập chữ lụa, giấy ruột nhập khẩu từ Thụy Điển với độ bắt sáng dịu mắt và kỹ thuật in Duotone đen trắng tương phản cao.',
+    deliverables: [
+      'Hệ thống lưới dàn trang (Editorial Grid)',
+      'Bìa cứng ép nhiệt trên vải Linen',
+      'Định hình phong cách Typography & Chú thích',
+      'Giám sát chất lượng xưởng in offset',
+    ],
+    tokens: [
+      { name: 'Xám Bê Tông', value: '#7D8287', type: 'color' },
+      { name: 'Đen Mực In', value: '#111215', type: 'color' },
+      { name: 'Đỏ Điểm Nhấn', value: '#D84035', type: 'color' },
+    ],
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Trang bìa Monograph bọc vải linen in kéo lụa trắng',
+        type: 'image',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Nội dung bên trong trang trí với nhịp điệu typography cân xứng',
+        type: 'image',
+      },
+    ],
+  },
+  {
+    id: 'tokyo-poster',
+    title: 'Triển Lãm Poster Typography "Đô Thị"',
+    subtitle: 'Bộ 12 tác phẩm poster chữ thử nghiệm giao thoa giữa Thư pháp Á Đông & Phong cách Quốc tế',
+    client: 'Art Space Gallery (Triển lãm cá nhân)',
+    category: 'typography',
+    categoryLabel: 'Typography & Poster',
+    year: '2024',
+    aspect: 'portrait',
+    featured: false,
+    coverImage: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1200&auto=format&fit=crop',
+    brief: 'Dự án nghệ thuật khám phá mật độ thông tin thị giác tại các đô thị hiện đại, giải cấu trúc các ký tự chữ cái và thư pháp thành những khối hình học giàu năng lượng chuyển động.',
+    solution: 'In lưới thủ công khổ B1 trên giấy mỹ thuật dạ quang, kết hợp mực nhũ bạc và mực đen bóng để tạo chiều sâu thị giác khi chiếu đèn rọi góc.',
+    deliverables: [
+      '12 Tác phẩm Poster khổ lớn B1',
+      'Hệ thống đồ họa chỉ dẫn không gian triển lãm',
+      'Sách ảnh Risograph giới hạn 200 bản',
+    ],
+    tokens: [
+      { name: 'Đỏ Chu Sa', value: '#E63946', type: 'color' },
+      { name: 'Đen Carbon', value: '#0A0A0A', type: 'color' },
+      { name: 'Bạc Kim Loại', value: '#C0C0C0', type: 'color' },
+    ],
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Toàn cảnh góc trưng bày 3 tác phẩm chính trong triển lãm',
+        type: 'image',
+      },
+    ],
+  },
+  {
+    id: 'soulier-gin',
+    title: 'Rượu Gin Thủ Công Soulier No. 7',
+    subtitle: 'Thiết kế nhãn chai rượu cao cấp với tem niêm phong sáp thủ công',
+    client: 'Soulier Distillers (Bordeaux / Sài Gòn)',
+    category: 'packaging',
+    categoryLabel: 'Bao Bì Sản Phẩm',
+    year: '2024',
+    aspect: 'square',
+    featured: true,
+    coverImage: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?q=80&w=1200&auto=format&fit=crop',
+    brief: 'Tạo nên một diện mạo cổ điển nhưng sang trọng cho dòng rượu gin ủ thùng gỗ sồi phiên bản giới hạn, kể câu chuyện về 7 loại thảo mộc chưng cất thủ công.',
+    solution: 'Nhãn chai giấy sợi bông 360 độ dán tay, kỹ thuật ép kim đồng vi mô và đánh số thứ tự từng chai bằng bút mực thủ công, niêm phong cổ chai bằng xi sáp đỏ.',
+    deliverables: [
+      'Thiết kế nhãn chai chính & nhãn cổ chai',
+      'Ống trụ tròn đựng quà tặng cao cấp',
+      'Thẻ ghi chú hương vị sản phẩm',
+    ],
+    tokens: [
+      { name: 'Nâu Hổ Phách', value: '#8B4513', type: 'color' },
+      { name: 'Đồng Cháy', value: '#B87333', type: 'color' },
+      { name: 'Sáp Đỏ Rượu', value: '#661824', type: 'color' },
+    ],
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Chai rượu Soulier với ánh kim đồng tinh xảo',
+        type: 'image',
+      },
+    ],
+  },
+  {
+    id: 'atelier-fashion',
+    title: 'Thương Hiệu Thời Trang Noir Atelier',
+    subtitle: 'Nhận diện thương hiệu thời trang tối giản & Lookbook phong cách Paris',
+    client: 'Noir Atelier Fashion Studio',
+    category: 'branding',
+    categoryLabel: 'Nhận Diện Thương Hiệu',
+    year: '2023',
+    aspect: 'wide',
+    featured: false,
+    coverImage: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop',
+    brief: 'Thương hiệu may đo cao cấp cần một ngôn ngữ thị giác thuần túy, tinh giản tuyệt đối để làm nổi bật phom dáng và đường may của trang phục.',
+    solution: 'Logo Monogram chữ lồng tinh tế, mác áo dệt sợi tự nhiên, túi giấy dập vân da kỳ nhông và lookbook in trên giấy mỹ thuật không bóng.',
+    deliverables: [
+      'Bộ nhận diện thương hiệu & Monogram',
+      'Thiết kế tag mác quần áo & túi xách',
+      'Dàn trang Lookbook mùa Xuân - Hè',
+      'Bộ Key Visual truyền thông mạng xã hội',
+    ],
+    tokens: [
+      { name: 'Đen Tuyền', value: '#080808', type: 'color' },
+      { name: 'Trắng Sữa', value: '#FAFAFA', type: 'color' },
+      { name: 'Ghi Khói', value: '#9E9E9E', type: 'color' },
+    ],
+    gallery: [
+      {
+        url: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop',
+        caption: 'Lookbook thời trang Noir Atelier với bố cục thanh lịch',
+        type: 'image',
+      },
+    ],
+  },
+];
+
+export const SERVICES: Service[] = [
+  {
+    index: '01',
+    name: 'Nhận Diện Thương Hiệu Toàn Diện (Brand Identity System)',
+    tagline: 'Kiến tạo bản sắc thương hiệu độc bản từ cốt lõi văn hóa & chiến lược thị giác.',
+    description: 'Xây dựng toàn diện ngôn ngữ thị giác: Logo & Monogram tùy chỉnh, cẩm nang quy chuẩn màu sắc, hệ thống phông chữ, họa tiết bổ trợ và toàn bộ ấn phẩm văn phòng phẩm.',
+    timeline: '3 — 5 tuần',
+    deliverables: [
+      'Logo & Hệ thống biểu trưng đa ứng dụng (Vector AI, EPS, SVG, PNG)',
+      'Bộ Cẩm nang Quy chuẩn Thương hiệu chi tiết (Brand Guidelines PDF / Web)',
+      'Hệ thống ấn phẩm văn phòng: Namecard, Tiêu đề thư, Phong bì thư, Folder tài liệu',
+      'Hệ thống màu sắc Pantone & CMYK chuẩn xác, quy tắc sử dụng phông chữ',
+    ],
+    deliverablesDetailed: [
+      {
+        title: 'Nghiên Cứu Định Vị & Moodboard',
+        desc: 'Khảo sát đối thủ cạnh tranh, phân tích nhóm khách hàng mục tiêu và định hình bảng cảm xúc (Visual Moodboard).',
+      },
+      {
+        title: 'Thiết Kế Logo & Hệ Thống Ký Tự',
+        desc: 'Phát triển 3 hướng concept độc bản, tinh chỉnh tỷ lệ hình học và hoàn thiện biểu trưng cốt lõi.',
+      },
+      {
+        title: 'Hệ Thống Ứng Dụng Thực Tế',
+        desc: 'Áp dụng trên thực tế các điểm chạm: namecard dập nổi, đồng phục, bảng hiệu, ấn phẩm truyền thông.',
+      },
+      {
+        title: 'Đóng Gói Cẩm Nang Thương Hiệu',
+        desc: 'Tài liệu hướng dẫn chi tiết từ 60 - 120 trang giúp nội bộ và đối tác ứng dụng chuẩn xác không sai lệch.',
+      },
+    ],
+  },
+  {
+    index: '02',
+    name: 'Thiết Kế Bao Bì & Hộp Quà Cao Cấp (Packaging Design)',
+    tagline: 'Nâng tầm giá trị sản phẩm qua trải nghiệm mở hộp (unboxing) xúc giác.',
+    description: 'Thiết kế bao bì chai lọ, nhãn dán, túi hộp và bao bì quà tặng giới hạn. Kiểm soát chặt chẽ khuôn bế die-cut, kỹ thuật in dập nổi, ép kim và lựa chọn giấy mỹ thuật.',
+    timeline: '2 — 4 tuần',
+    deliverables: [
+      'Bản vẽ kỹ thuật khuôn bế (Die-cut line) chính xác 100% cho nhà in',
+      'Bao bì chai lọ thủy tinh, lon nhôm, túi zipper & hộp cứng quà tặng',
+      'Quy chuẩn hiệu ứng sau in: Dập nổi, dập chìm, ép kim, phủ UV định hình',
+      'Bộ ảnh phối cảnh 3D Mockup chân thực phục vụ truyền thông ra mắt',
+    ],
+    deliverablesDetailed: [
+      {
+        title: 'Khảo Sát Kết Cấu & Vật Liệu',
+        desc: 'Lựa chọn định lượng giấy, độ dày carton sóng, tính toán độ bền và cảm giác cầm nắm trên tay.',
+      },
+      {
+        title: 'Bố Cục Đồ Họa & Mặt Nhãn',
+        desc: 'Sắp xếp thông tin thành phần, barcode, tem kiểm định và điểm nhấn nghệ thuật hài hòa.',
+      },
+      {
+        title: 'Làm Mẫu Thử Nghiệm (Prototype)',
+        desc: 'In mẫu test thực tế để kiểm tra màu sắc dưới ánh sáng tự nhiên và kiểm tra độ khít của nắp hộp.',
+      },
+    ],
+  },
+  {
+    index: '03',
+    name: 'Ấn Phẩm Biên Tập & Sách Nghệ Thuật (Editorial & Books)',
+    tagline: 'Mang đến nhịp điệu đọc thư thái và giá trị lưu trữ qua từng trang in.',
+    description: 'Thiết kế sách ảnh, tạp chí, catalogue sản phẩm cao cấp, hồ sơ năng lực doanh nghiệp (Profile) với hệ thống lưới đồ họa tinh tế và kỹ thuật in Duotone / Offset cao cấp.',
+    timeline: '3 — 6 tuần',
+    deliverables: [
+      'Hệ thống lưới dàn trang (Editorial Grid System) chuẩn quốc tế',
+      'Thiết kế bìa sách (Bìa cứng bọc vải linen, bìa mềm dập chữ nhiệt)',
+      'Hồ sơ năng lực công ty (Company Profile / Portfolio doanh nghiệp)',
+      'Catalogue giới thiệu bộ sưu tập thời trang, nội thất, bất động sản',
+    ],
+    deliverablesDetailed: [
+      {
+        title: 'Kiến Trúc Nội Dung & Dàn Trang',
+        desc: 'Thiết lập nhịp điệu hình ảnh và văn bản để người đọc không bị mỏi mắt khi theo dõi lượng thông tin lớn.',
+      },
+      {
+        title: 'Typography & Hiệu Chỉnh Ký Tự',
+        desc: 'Lựa chọn các bộ font serif và sans-serif có khả năng bổ trợ hoàn hảo cho nhau.',
+      },
+      {
+        title: 'Giám Sát Chất Lượng Xưởng In',
+        desc: 'Ký duyệt bài in (Press-check) trực tiếp tại xưởng in để đảm bảo màu mực đồng đều tuyệt đối.',
+      },
+    ],
+  },
+  {
+    index: '04',
+    name: 'Typography & Thiết Kế Quảng Cáo (Key Visual & Marketing)',
+    tagline: 'Tạo nên hình ảnh chủ đạo ấn tượng, kích thích hành động và chia sẻ.',
+    description: 'Sáng tạo hình ảnh chủ đạo (Key Visual) cho các chiến dịch ra mắt, poster triển lãm nghệ thuật, bộ nhận diện mạng xã hội đồng nhất và typography hiển thị độc quyền.',
+    timeline: '1 — 2 tuần',
+    deliverables: [
+      'Key Visual chiến dịch quảng cáo đa kích thước (Online & Offline)',
+      'Poster triển lãm nghệ thuật, âm nhạc, sự kiện văn hóa khổ lớn',
+      'Bộ Social Media Kit đồng bộ giao diện cho Facebook, Instagram, LinkedIn',
+      'Thiết kế phông chữ hiển thị độc quyền (Display Lettering)',
+    ],
+    deliverablesDetailed: [
+      {
+        title: 'Ý Tưởng Sáng Tạo Điểm Nhấn',
+        desc: 'Chắt lọc thông điệp cốt lõi của chiến dịch thành một hình ảnh thị giác có sức công phá mạnh mẽ.',
+      },
+      {
+        title: 'Thích Ứng Mọi Nền Tảng Kỹ Thuật Số',
+        desc: 'Tối ưu kích thước cho banner website, story 9:16, post 1:1, cover đa tỷ lệ.',
+      },
+    ],
+  },
+];
+
+export const AWARDS: Award[] = [
+  {
+    year: '2025',
+    title: 'Red Dot Design Award: Best of the Best',
+    category: 'Packaging Design',
+    organization: 'Hội đồng Thiết kế Red Dot (Đức)',
+    project: 'Soulier Distillers No. 7',
+  },
+  {
+    year: '2025',
+    title: 'Tokyo TDC Annual Book Selection',
+    category: 'Editorial & Book Design',
+    organization: 'Tokyo Type Directors Club (Nhật Bản)',
+    project: 'MONOLITH Architecture Review',
+  },
+  {
+    year: '2024',
+    title: 'Vietnam Creative Excellence: Gold Award',
+    category: 'Brand Identity System',
+    organization: 'Vietnam Creative Circle',
+    project: 'Kanso Roastery & Cafe',
+  },
+  {
+    year: '2024',
+    title: 'Awwwards Site of the Day / Mobile Excellence',
+    category: 'Digital Portfolio & Art Direction',
+    organization: 'Awwwards International',
+    project: 'Aura Botanicals Experience',
+  },
+  {
+    year: '2023',
+    title: 'D&AD Wooden Pencil Award',
+    category: 'Typography in Posters',
+    organization: 'D&AD London (Vương quốc Anh)',
+    project: 'Triển lãm Poster Typography "Đô Thị"',
+  },
+];
+
+export const CLIENT_LOGOS = [
+  'KANSO ROASTERY',
+  'AURA BOTANICALS',
+  'MONOLITH PRESS',
+  'SOULIER GIN',
+  'NOIR ATELIER',
+  'SAIGON ART SPACE',
+  'TOKYO TDC',
+  'HANOI DESIGN WEEK',
+];
