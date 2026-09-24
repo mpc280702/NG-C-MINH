@@ -22,33 +22,33 @@ export const SafeImage: React.FC<SafeImageProps> = ({
   if (hasError || !src) {
     return (
       <div
-        className={`w-full ${aspectClass} bg-gradient-to-br from-[#16171b] via-[#1c1e24] to-[#121316] border border-white/5 relative flex flex-col justify-between p-6 overflow-hidden select-none ${className}`}
+        className={`w-full ${aspectClass} bg-gradient-to-br from-[#082820] via-[#083028] to-[#003828] border border-[#10b981]/20 relative flex flex-col justify-between p-6 overflow-hidden select-none ${className}`}
       >
         {/* Subtle graphic design grid & technical corner marks */}
-        <div className="absolute inset-0 bg-[radial-gradient(#ffffff08_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
-        <div className="absolute top-3 left-3 w-2 h-2 border-t border-l border-white/20" />
-        <div className="absolute top-3 right-3 w-2 h-2 border-t border-r border-white/20" />
-        <div className="absolute bottom-3 left-3 w-2 h-2 border-b border-l border-white/20" />
-        <div className="absolute bottom-3 right-3 w-2 h-2 border-b border-r border-white/20" />
+        <div className="absolute inset-0 bg-[radial-gradient(#10b98115_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+        <div className="absolute top-3 left-3 w-2 h-2 border-t border-l border-[#10b981]/40" />
+        <div className="absolute top-3 right-3 w-2 h-2 border-t border-r border-[#10b981]/40" />
+        <div className="absolute bottom-3 left-3 w-2 h-2 border-b border-l border-[#10b981]/40" />
+        <div className="absolute bottom-3 right-3 w-2 h-2 border-b border-r border-[#10b981]/40" />
 
-        <div className="flex items-center justify-between text-[11px] font-mono text-white/40 tracking-wider uppercase z-10">
+        <div className="flex items-center justify-between text-[11px] font-mono text-[#8caaa0] tracking-wider uppercase z-10">
           <span>{fallbackCategory}</span>
-          <span>CURATED SPECIMEN</span>
+          <span className="text-[#10b981] font-bold">PROJECT SPECIMEN</span>
         </div>
 
         <div className="my-auto py-4 z-10">
-          <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/50 mb-3">
+          <div className="w-8 h-8 rounded-full bg-[#003828] border border-[#10b981]/30 flex items-center justify-center text-[#10b981] mb-3">
             <ImageIcon className="w-4 h-4" />
           </div>
-          <h4 className="font-display font-bold text-lg md:text-xl text-white/90 tracking-tight">
+          <h4 className="font-display font-bold text-lg md:text-xl text-[#F8F8F8] tracking-tight">
             {fallbackTitle}
           </h4>
-          <p className="text-xs text-white/50 mt-1 font-sans">
-            Minimalist form & typography architecture
+          <p className="text-xs text-[#c0d3cb] mt-1 font-sans">
+            Minimalist form &amp; typography architecture
           </p>
         </div>
 
-        <div className="flex items-center justify-between text-[10px] font-mono text-white/30 border-t border-white/5 pt-3 z-10">
+        <div className="flex items-center justify-between text-[10px] font-mono text-[#8caaa0] border-t border-[#083028] pt-3 z-10">
           <span>FORM · BALANCE · TONE</span>
           <span>EST. 2026</span>
         </div>
@@ -57,10 +57,10 @@ export const SafeImage: React.FC<SafeImageProps> = ({
   }
 
   return (
-    <div className={`relative overflow-hidden ${aspectClass} ${className} bg-[#141518]`}>
+    <div className={`relative overflow-hidden ${aspectClass} ${className} bg-[#082820]`}>
       {isLoading && (
-        <div className="absolute inset-0 bg-[#16181d] animate-pulse flex items-center justify-center">
-          <div className="w-6 h-6 border-2 border-white/10 border-t-white/50 rounded-full animate-spin" />
+        <div className="absolute inset-0 bg-[#083028] animate-pulse flex items-center justify-center">
+          <div className="w-6 h-6 border-2 border-[#10b981]/30 border-t-[#10b981] rounded-full animate-spin" />
         </div>
       )}
       <img
@@ -68,6 +68,7 @@ export const SafeImage: React.FC<SafeImageProps> = ({
         alt={alt}
         referrerPolicy="no-referrer"
         loading="lazy"
+        decoding="async"
         onLoad={() => setIsLoading(false)}
         onError={() => setHasError(true)}
         className={`w-full h-full object-cover transition-all duration-700 ease-out ${

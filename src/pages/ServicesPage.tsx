@@ -154,24 +154,23 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
                   <div className="mt-6 pt-6 border-t border-[#083028] text-xs text-[#c0d3cb] space-y-2 font-mono">
                     <div className="flex items-center gap-2 text-[#10b981]">
                       <ShieldCheck className="w-4 h-4 shrink-0" />
-                      <span>Cam kết bảo hành file & hỗ trợ xưởng in 100%</span>
+                      <span>Cam kết bảo hành file &amp; hỗ trợ xưởng in 100%</span>
                     </div>
                     <p className="font-sans font-light">
-                      Mọi thắc mắc kỹ thuật từ xưởng in về thông số màu CMYK, khuôn bế hay bù hao xén đều được trực tiếp Minh Ngọc giải quyết.
+                      Mọi thắc mắc kỹ thuật từ xưởng in về thông số màu CMYK, khuôn bế hay bù hao xén đều được trực tiếp tôi hỗ trợ giải quyết.
                     </p>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-[#083028]">
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                  <button
+                    type="button"
                     onClick={() => onNavigate('contact')}
-                    className="w-full py-3.5 px-6 rounded-xl bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#F8F8F8]/30 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer shadow-xl transition-all"
+                    className="w-full py-3.5 px-6 rounded-xl bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#F8F8F8]/30 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer shadow-xl transition-all focus-visible:ring-2 focus-visible:ring-[#10b981]"
                   >
                     <span>Nhận Báo Giá Gói Này</span>
                     <ArrowUpRight className="w-4 h-4" />
-                  </motion.button>
+                  </button>
                 </div>
               </div>
             </div>

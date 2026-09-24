@@ -41,11 +41,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-dark);
   color: var(--color-white);
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, .font-display, .font-editorial {
@@ -54,6 +60,12 @@ h1, h2, h3, h4, h5, h6, .font-display, .font-editorial {
 
 code, kbd, samp, pre, .font-mono {
   font-family: "Roboto Mono", "Roboto", monospace;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
 }
 
 /* Custom scrollbar using specified colors */
@@ -88,4 +100,18 @@ code, kbd, samp, pre, .font-mono {
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-marquee {
+    animation: none;
+    overflow-x: auto;
+  }
 }
