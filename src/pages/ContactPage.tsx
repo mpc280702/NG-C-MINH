@@ -140,7 +140,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-6xl text-[#F8F8F8] tracking-tight">
-            Khởi Đầu Một Dự Án Mới
+            Cùng Bắt Đầu Một Dự Án
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#c0d3cb] font-light max-w-2xl leading-relaxed">
             Tôi luôn hào hứng lắng nghe câu chuyện thương hiệu của bạn và cùng kiến tạo những thiết kế thị giác đẳng cấp, bền vững.
@@ -183,7 +183,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
             {/* Email Box */}
             <div className="p-5 rounded-2xl bg-[#083028] border border-[#003828] hover:border-[#10b981]/40 transition-colors shadow-lg space-y-2">
               <div className="text-[11px] font-mono uppercase text-[#8caaa0]">
-                Email Liên Hệ Trực Tiếp
+                Email
               </div>
               <div className="flex items-center justify-between gap-3">
                 <a
@@ -283,7 +283,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 <div>
                   <span className="text-[#8caaa0] block text-[11px]">ĐỊA ĐIỂM LÀM VIỆC:</span>
                   <span className="text-[#F8F8F8] font-medium block mt-0.5">{DESIGNER_INFO.address}</span>
-                  <span className="text-[#10b981] font-semibold block mt-1">✓ Sẵn sàng On-site tại Hà Nội &amp; Remote toàn quốc</span>
+                  <span className="text-[#10b981] font-semibold block mt-1">✓ Hà Nội · On-site &amp; Remote</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 pt-2 border-t border-[#083028]">
@@ -303,7 +303,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-4 rounded-xl bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#10b981]/40 font-mono font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-lg focus-visible:ring-2 focus-visible:ring-[#10b981]"
               >
-                <span>Tải CV / Hồ Sơ Năng Lực (Google Drive)</span>
+                <span>Tải CV</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
@@ -556,7 +556,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                       </>
                     ) : (
                       <>
-                        <span>Gửi Yêu Cầu Tư Vấn &amp; Báo Giá</span>
+                        <span>Gửi Yêu Cầu</span>
                         <Send className="w-4 h-4" />
                       </>
                     )}
