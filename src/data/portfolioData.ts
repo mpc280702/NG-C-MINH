@@ -7,7 +7,7 @@ export const DESIGNER_INFO = {
   tagline: 'Chuyên sâu Brand Identity, Key Visual, Hệ Thống Ấn Phẩm Quảng Cáo & Thiết Kế Bao Bì.',
   bio: 'Graphic Designer tại Hà Nội chuyên sâu trong việc xây dựng hệ thống nhận diện thương hiệu, thiết kế Key Visual, Menu, POSM và ấn phẩm truyền thông cho các thương hiệu phong cách sống, F&B và doanh nghiệp.',
   philosophy: 'Thiết kế không chỉ đơn thuần là làm đẹp bề mặt. Đó là sự giao thoa chuẩn xác giữa lý tính logic và cảm xúc thị giác, giúp thương hiệu tạo dựng niềm tin bền vững và chạm đến khách hàng.',
-  email: 'mngoc1285l@gmail.com',
+  email: 'mngoc12851@gmail.com',
   phone: '0327.430.794',
   phoneTel: '0327430794',
   zalo: '0327430794',
