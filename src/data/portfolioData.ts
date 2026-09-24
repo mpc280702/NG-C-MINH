@@ -70,8 +70,8 @@ export const DESIGN_PROCESS_STEPS: DesignProcessStep[] = [
     step: '05',
     title: 'Bàn Giao',
     enTitle: 'Deliver',
-    summary: 'Đóng gói cẩm nang thương hiệu, bàn giao file vector chuẩn và giám sát ứng dụng.',
-    details: 'Xuất file vector chuẩn cho in ấn (AI, PDF, EPS, SVG), đóng gói cẩm nang Brand Guidelines và đồng hành giám sát chất lượng xưởng in.',
+    summary: 'Đóng gói file, phiên bản xuất và hướng dẫn cần thiết để tiếp tục triển khai.',
+    details: 'Chuẩn bị file final cho digital/in ấn và tài liệu hướng dẫn cần thiết để sử dụng đồng nhất.',
   },
 ];
 
