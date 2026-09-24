@@ -47,10 +47,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-6xl text-[#F8F8F8] tracking-tight">
-            Năng Lực Chuyên Môn &amp; Công Cụ
+            Kỹ Năng &amp; Công Cụ
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#c0d3cb] font-light max-w-2xl leading-relaxed">
-            Làm chủ hệ thống công cụ đồ họa tiêu chuẩn và quy chuẩn in ấn khắt khe, biến ý tưởng sáng tạo thành giải pháp thị giác chuẩn xác và có giá trị ứng dụng cao.
+            Các công cụ và chuyên môn tôi sử dụng để biến brief thành hệ thống thiết kế rõ ràng, từ digital đến ấn phẩm in.
           </p>
         </motion.div>
 
@@ -64,10 +64,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               </div>
               <div>
                 <h2 className="font-display font-bold text-xl text-[#F8F8F8]">
-                  1. Công Cụ Thiết Kế Chuyên Dụng (Design Tools)
+                  1. Công Cụ Thiết Kế (Design Tools)
                 </h2>
                 <p className="text-xs font-mono text-[#8caaa0]">
-                  Adobe Creative Cloud &amp; UI Systems
+                  Adobe Creative Cloud &amp; UI
                 </p>
               </div>
             </div>
@@ -107,10 +107,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               </div>
               <div>
                 <h2 className="font-display font-bold text-xl text-[#F8F8F8]">
-                  2. Chuyên Môn &amp; Kỹ Thuật Đồ Họa (Specialization)
+                  2. Chuyên Môn Thiết Kế (Specialization)
                 </h2>
                 <p className="text-xs font-mono text-[#8caaa0]">
-                  Brand Systems, Packaging &amp; Print Prepress
+                  Brand Identity, Packaging &amp; Editorial
                 </p>
               </div>
             </div>
@@ -150,10 +150,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               </div>
               <div>
                 <h2 className="font-display font-bold text-xl text-[#F8F8F8]">
-                  3. Hệ Thống Sáng Tạo Số &amp; Quy Trình Mới (Digital &amp; Systems)
+                  3. Digital &amp; Creative Workflow
                 </h2>
                 <p className="text-xs font-mono text-[#8caaa0]">
-                  Brand Guidelines, Social Media Kits &amp; Modern Workflows
+                  Digital Systems, Social Kits &amp; AI-assisted Workflow
                 </p>
               </div>
             </div>
@@ -190,10 +190,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
         <div className="p-8 sm:p-12 rounded-3xl bg-[#082820] border border-[#083028] space-y-8">
           <div>
             <div className="text-xs font-mono uppercase tracking-wider text-[#8caaa0] font-bold mb-2">
-              Cam Kết Chất Lượng Bàn Giao
+              Cách Tôi Chuẩn Bị File
             </div>
             <h2 className="font-display font-black text-2xl sm:text-3xl text-[#F8F8F8]">
-              Quy Chuẩn File Bàn Giao Khách Hàng
+              File Bàn Giao &amp; Chuẩn Hóa
             </h2>
           </div>
 
@@ -204,7 +204,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                 File Gốc Vector Đầy Đủ
               </h3>
               <p className="text-xs text-[#c0d3cb] leading-relaxed font-light">
-                Bàn giao đầy đủ file Adobe Illustrator (.AI), EPS, SVG, PNG trong suốt và PDF phân giải cao (300 DPI+). Phân tách layer khoa học, outline chữ sẵn sàng in.
+                Bàn giao đúng định dạng cần thiết cho từng mục đích: file source, file vector và file export cho digital/in ấn. Cấu trúc layer và tên file được sắp xếp rõ ràng.
               </p>
             </div>
 
@@ -214,7 +214,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                 Chuẩn Màu In CMYK &amp; Pantone
               </h3>
               <p className="text-xs text-[#c0d3cb] leading-relaxed font-light">
-                Tất cả ấn phẩm in ấn đều được kiểm tra profile màu CMYK Fogra39 / GRACoL, mã hóa chuẩn xác số màu Pantone Solid Coated / Uncoated để màu in chuẩn xác.
+                Kiểm tra kích thước, bleed, font, hình ảnh và không gian màu theo yêu cầu của nhà in hoặc nền tảng sử dụng.
               </p>
             </div>
 
@@ -224,7 +224,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                 Bản Vẽ Khuôn Bế (Die-cut)
               </h3>
               <p className="text-xs text-[#c0d3cb] leading-relaxed font-light">
-                Bao bì và hộp quà luôn đi kèm bản vẽ kỹ thuật khuôn bế (đường cắt, đường cấn gập, đường răng cưa) và mẫu in thử nghiệm 1:1 trước khi sản xuất hàng loạt.
+                Khi dự án có packaging, tôi chuẩn bị artwork và các thông số cần thiết theo khuôn bế/kích thước được cung cấp.
               </p>
             </div>
           </div>
@@ -235,7 +235,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               onClick={() => onNavigate('contact')}
               className="px-6 py-3 rounded-xl bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#F8F8F8]/30 font-semibold text-xs flex items-center gap-2 cursor-pointer shadow-lg transition-all focus-visible:ring-2 focus-visible:ring-[#10b981]"
             >
-              <span>Bạn cần tư vấn kỹ thuật cho dự án? Liên hệ ngay</span>
+              <span>Trao đổi về yêu cầu file? Liên hệ ngay</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
           </div>
