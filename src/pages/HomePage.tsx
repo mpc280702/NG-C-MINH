@@ -201,8 +201,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
         </div>
 
         {/* Marquee Ticker */}
-        <div className="mt-16 py-3 bg-[#082820] border-y border-[#083028] overflow-hidden whitespace-nowrap select-none">
-          <div className="inline-flex items-center gap-8 text-xs font-mono tracking-widest text-[#8caaa0] uppercase animate-[marquee_24s_linear_infinite]">
+        <div className="mt-16 py-3 bg-[#082820] border-y border-[#083028] overflow-hidden whitespace-nowrap select-none flex">
+          <motion.div
+            className="flex shrink-0 items-center gap-8 text-xs font-mono tracking-widest text-[#8caaa0] uppercase pr-8"
+            animate={{ x: ['0%', '-100%'] }}
+            transition={{
+              repeat: Infinity,
+              ease: 'linear',
+              duration: 25,
+            }}
+          >
             <span>NHẬN DIỆN THƯƠNG HIỆU</span>
             <span className="text-[#10b981]">✦</span>
             <span>BAO BÌ SẢN PHẨM CAO CẤP</span>
@@ -213,11 +221,28 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
             <span className="text-[#10b981]">✦</span>
             <span>CẨM NANG BRAND GUIDELINES</span>
             <span className="text-[#10b981]">✦</span>
+          </motion.div>
+          <motion.div
+            className="flex shrink-0 items-center gap-8 text-xs font-mono tracking-widest text-[#8caaa0] uppercase pr-8"
+            animate={{ x: ['0%', '-100%'] }}
+            transition={{
+              repeat: Infinity,
+              ease: 'linear',
+              duration: 25,
+            }}
+            aria-hidden="true"
+          >
             <span>NHẬN DIỆN THƯƠNG HIỆU</span>
             <span className="text-[#10b981]">✦</span>
             <span>BAO BÌ SẢN PHẨM CAO CẤP</span>
             <span className="text-[#10b981]">✦</span>
-          </div>
+            <span>ẤN PHẨM & TẠP CHÍ NGHỆ THUẬT</span>
+            <span className="text-[#10b981]">✦</span>
+            <span>TYPOGRAPHY & KEY VISUAL</span>
+            <span className="text-[#10b981]">✦</span>
+            <span>CẨM NANG BRAND GUIDELINES</span>
+            <span className="text-[#10b981]">✦</span>
+          </motion.div>
         </div>
       </section>
 
