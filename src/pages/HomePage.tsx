@@ -11,7 +11,7 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject }) => {
-  const featuredProjects = PROJECTS.filter((project) => project.featured).slice(0, 4);
+  const featuredProjects = PROJECTS.slice(0, 4);
 
   return (
     <div className="bg-[#003028] text-[#F8F8F8] overflow-hidden">
@@ -43,15 +43,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
               </div>
 
               <h1 className="font-display font-black text-4xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-[#F8F8F8]">
-                Định hình bản sắc thương hiệu &amp;{' '}
+                Biến ý tưởng thành{' '}
                 <span className="italic font-normal text-[#c0d3cb] underline decoration-1 underline-offset-8">
-                  ngôn ngữ
+                  hệ thống thị giác
                 </span>{' '}
-                thị giác chuẩn mực.
+                rõ ràng và nhất quán.
               </h1>
 
               <p className="text-base sm:text-lg text-[#c0d3cb] font-light leading-relaxed max-w-2xl">
-                {DESIGNER_INFO.tagline} Với hơn {DESIGNER_INFO.experienceYears} năm thực chiến, tôi kiến tạo những sản phẩm thiết kế có sức sống bền bỉ, cân bằng giữa tư duy logic và cảm xúc thẩm mỹ.
+                Graphic Designer tại Hà Nội, tập trung Brand Identity, Key Visual, Packaging, Editorial và ấn phẩm truyền thông.
               </p>
 
               {/* Specialization Tags Bar */}
@@ -119,10 +119,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
                 <div className="w-px h-8 bg-[#083028] hidden sm:block" />
                 <div>
                   <div className="text-3xl font-display font-black text-[#F8F8F8]">
-                    {DESIGNER_INFO.workModes}
+                    {DESIGNER_INFO.projectFocus}
                   </div>
                   <div className="text-xs font-mono text-[#8caaa0] uppercase mt-0.5">
-                    Print + Digital
+                    Lĩnh Vực Chuyên Môn
                   </div>
                 </div>
               </div>
@@ -299,7 +299,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
               Quy Trình Thiết Kế 5 Bước
             </h2>
             <p className="text-xs sm:text-sm text-[#c0d3cb] mt-3 font-light leading-relaxed">
-              Mỗi dự án đi từ brief đến concept, thiết kế, tinh chỉnh và bàn giao theo một quy trình rõ ràng.
+              Mỗi sản phẩm đều được phát triển qua quy trình chặt chẽ, từ nghiên cứu cốt lõi đến khi hoàn thiện file in ấn và giám sát thực tế.
             </p>
           </div>
 
@@ -397,11 +397,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
           </div>
 
           <h2 className="font-display font-black text-3xl sm:text-5xl text-[#F8F8F8] tracking-tight leading-tight">
-            Bạn muốn nâng tầm diện mạo thương hiệu?
+            Cùng Bắt Đầu Một Dự Án Mới
           </h2>
 
           <p className="text-sm sm:text-base text-[#c0d3cb] font-light max-w-xl mx-auto">
-            Hãy liên hệ với tôi ngay hôm nay để nhận tư vấn giải pháp thị giác và báo giá chi tiết trong vòng 24 giờ.
+            Liên hệ để cùng trao đổi brief cụ thể, định hướng thị giác và giải pháp thiết kế phù hợp cho thương hiệu của bạn.
           </p>
 
           <div className="pt-2 flex flex-wrap justify-center gap-4">
@@ -410,7 +410,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
               onClick={() => onNavigate('contact')}
               className="px-8 py-4 rounded-xl bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#F8F8F8]/40 font-bold text-sm flex items-center gap-2 cursor-pointer shadow-2xl transition-all focus-visible:ring-2 focus-visible:ring-[#10b981]"
             >
-              <span>Bắt Đầu Dự Án Ngay</span>
+              <span>Liên Hệ Trao Đổi Brief</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <button
@@ -418,7 +418,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
               onClick={() => onNavigate('about')}
               className="px-8 py-4 rounded-xl bg-[#003028] hover:bg-[#083028] text-[#F8F8F8] border border-[#083028] font-bold text-sm flex items-center gap-2 cursor-pointer transition-all focus-visible:ring-2 focus-visible:ring-[#10b981]"
             >
-              <span>Tìm Hiểu Về Tôi</span>
+              <span>Về Tôi &amp; Cách Tôi Thiết Kế</span>
             </button>
           </div>
         </div>

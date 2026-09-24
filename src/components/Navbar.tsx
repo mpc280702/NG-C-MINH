@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
           </div>
           <p className="text-[11px] font-mono tracking-wider text-[#c0d3cb] uppercase">
-            Graphic Designer
+            Graphic Designer · Digital Creator
           </p>
         </motion.button>
 

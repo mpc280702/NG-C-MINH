@@ -56,15 +56,13 @@ export interface Service {
 }
 
 export type SkillCategory = 'tools' | 'specialization' | 'digital';
-export type SkillProficiency = 'Advanced' | 'Intermediate' | 'Working Knowledge';
+export type SkillProficiency = 'Thành thạo' | 'Khá tốt' | 'Chuyên môn chính' | 'Đang phát triển';
 
 export interface ToolSkill {
   name: string;
   proficiency: SkillProficiency;
-  proficiencyLabel: string;
   category: SkillCategory;
   description: string;
-  experience: string;
 }
 
 export interface DesignProcessStep {

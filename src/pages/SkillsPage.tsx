@@ -15,10 +15,12 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
 
   const getBadgeStyle = (proficiency: string) => {
     switch (proficiency) {
-      case 'Advanced':
+      case 'Thành thạo':
+      case 'Chuyên môn chính':
         return 'bg-[#003828] text-[#10b981] border-[#10b981]/40';
-      case 'Intermediate':
-        return 'bg-[#082820] text-[#c0d3cb] border-[#083028]';
+      case 'Khá tốt':
+        return 'bg-[#083028] text-[#c0d3cb] border-[#10b981]/20';
+      case 'Đang phát triển':
       default:
         return 'bg-[#082820] text-[#8caaa0] border-[#083028]';
     }
@@ -47,10 +49,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-6xl text-[#F8F8F8] tracking-tight">
-            Kỹ Năng &amp; Công Cụ
+            Năng Lực Chuyên Môn &amp; Công Cụ
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#c0d3cb] font-light max-w-2xl leading-relaxed">
-            Các công cụ và chuyên môn tôi sử dụng để biến brief thành hệ thống thiết kế rõ ràng, từ digital đến ấn phẩm in.
+            Làm chủ hệ thống công cụ đồ họa tiêu chuẩn và quy chuẩn in ấn khắt khe, biến ý tưởng sáng tạo thành giải pháp thị giác chuẩn xác và có giá trị ứng dụng cao.
           </p>
         </motion.div>
 
@@ -64,10 +66,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               </div>
               <div>
                 <h2 className="font-display font-bold text-xl text-[#F8F8F8]">
-                  1. Công Cụ Thiết Kế (Design Tools)
+                  1. Công Cụ Thiết Kế Chuyên Dụng (Tools)
                 </h2>
                 <p className="text-xs font-mono text-[#8caaa0]">
-                  Adobe Creative Cloud &amp; UI
+                  Adobe Creative Suite &amp; Design Software
                 </p>
               </div>
             </div>
@@ -85,15 +87,12 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                         skill.proficiency
                       )}`}
                     >
-                      {skill.proficiencyLabel}
+                      {skill.proficiency}
                     </span>
                   </div>
                   <p className="text-xs text-[#c0d3cb] font-light leading-relaxed">
                     {skill.description}
                   </p>
-                  <div className="pt-2 border-t border-[#082820] text-[11px] font-mono text-[#8caaa0]">
-                    Kinh nghiệm: {skill.experience}
-                  </div>
                 </div>
               ))}
             </div>
@@ -107,10 +106,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               </div>
               <div>
                 <h2 className="font-display font-bold text-xl text-[#F8F8F8]">
-                  2. Chuyên Môn Thiết Kế (Specialization)
+                  2. Chuyên Môn &amp; Kỹ Thuật Đồ Họa (Specializations)
                 </h2>
                 <p className="text-xs font-mono text-[#8caaa0]">
-                  Brand Identity, Packaging &amp; Editorial
+                  Brand Systems, Packaging &amp; Print Prepress
                 </p>
               </div>
             </div>
@@ -128,15 +127,12 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                         skill.proficiency
                       )}`}
                     >
-                      {skill.proficiencyLabel}
+                      {skill.proficiency}
                     </span>
                   </div>
                   <p className="text-xs text-[#c0d3cb] font-light leading-relaxed">
                     {skill.description}
                   </p>
-                  <div className="pt-2 border-t border-[#082820] text-[11px] font-mono text-[#8caaa0]">
-                    Kinh nghiệm: {skill.experience}
-                  </div>
                 </div>
               ))}
             </div>
@@ -150,15 +146,15 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               </div>
               <div>
                 <h2 className="font-display font-bold text-xl text-[#F8F8F8]">
-                  3. Digital &amp; Creative Workflow
+                  3. Hệ Thống Sáng Tạo Số (Digital)
                 </h2>
                 <p className="text-xs font-mono text-[#8caaa0]">
-                  Digital Systems, Social Kits &amp; AI-assisted Workflow
+                  Digital Design Systems &amp; Modern Workflows
                 </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {digitalSkills.map((skill) => (
                 <div
                   key={skill.name}
@@ -171,15 +167,12 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                         skill.proficiency
                       )}`}
                     >
-                      {skill.proficiencyLabel}
+                      {skill.proficiency}
                     </span>
                   </div>
                   <p className="text-xs text-[#c0d3cb] font-light leading-relaxed">
                     {skill.description}
                   </p>
-                  <div className="pt-2 border-t border-[#082820] text-[11px] font-mono text-[#8caaa0]">
-                    Kinh nghiệm: {skill.experience}
-                  </div>
                 </div>
               ))}
             </div>
@@ -190,10 +183,10 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
         <div className="p-8 sm:p-12 rounded-3xl bg-[#082820] border border-[#083028] space-y-8">
           <div>
             <div className="text-xs font-mono uppercase tracking-wider text-[#8caaa0] font-bold mb-2">
-              Cách Tôi Chuẩn Bị File
+              Cam Kết Chất Lượng Bàn Giao
             </div>
             <h2 className="font-display font-black text-2xl sm:text-3xl text-[#F8F8F8]">
-              File Bàn Giao &amp; Chuẩn Hóa
+              Quy Chuẩn File Bàn Giao Khách Hàng
             </h2>
           </div>
 
@@ -204,7 +197,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                 File Gốc Vector Đầy Đủ
               </h3>
               <p className="text-xs text-[#c0d3cb] leading-relaxed font-light">
-                Bàn giao đúng định dạng cần thiết cho từng mục đích: file source, file vector và file export cho digital/in ấn. Cấu trúc layer và tên file được sắp xếp rõ ràng.
+                Bàn giao đầy đủ file Adobe Illustrator (.AI), EPS, SVG, PNG trong suốt và PDF phân giải cao (300 DPI+). Phân tách layer khoa học, outline chữ sẵn sàng in.
               </p>
             </div>
 
@@ -214,7 +207,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                 Chuẩn Màu In CMYK &amp; Pantone
               </h3>
               <p className="text-xs text-[#c0d3cb] leading-relaxed font-light">
-                Kiểm tra kích thước, bleed, font, hình ảnh và không gian màu theo yêu cầu của nhà in hoặc nền tảng sử dụng.
+                Tất cả ấn phẩm in ấn đều được kiểm tra profile màu CMYK Fogra39 / GRACoL, mã hóa chuẩn xác số màu Pantone Solid Coated / Uncoated để màu in chuẩn xác.
               </p>
             </div>
 
@@ -224,7 +217,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
                 Bản Vẽ Khuôn Bế (Die-cut)
               </h3>
               <p className="text-xs text-[#c0d3cb] leading-relaxed font-light">
-                Khi dự án có packaging, tôi chuẩn bị artwork và các thông số cần thiết theo khuôn bế/kích thước được cung cấp.
+                Bao bì và hộp quà luôn đi kèm bản vẽ kỹ thuật khuôn bế (đường cắt, đường cấn gập, đường răng cưa) và mẫu in thử nghiệm 1:1 trước khi sản xuất hàng loạt.
               </p>
             </div>
           </div>
@@ -235,7 +228,7 @@ export const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
               onClick={() => onNavigate('contact')}
               className="px-6 py-3 rounded-xl bg-[#003828] hover:bg-[#10b981] hover:text-[#101010] text-[#F8F8F8] border border-[#F8F8F8]/30 font-semibold text-xs flex items-center gap-2 cursor-pointer shadow-lg transition-all focus-visible:ring-2 focus-visible:ring-[#10b981]"
             >
-              <span>Trao đổi về yêu cầu file? Liên hệ ngay</span>
+              <span>Bạn cần tư vấn kỹ thuật cho dự án? Liên hệ ngay</span>
               <ArrowUpRight className="w-4 h-4" />
             </button>
           </div>

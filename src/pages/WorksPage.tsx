@@ -65,7 +65,7 @@ export const WorksPage: React.FC<WorksPageProps> = ({ onSelectProject, onNavigat
             Dự Án Chọn Lọc
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#c0d3cb] font-light max-w-2xl leading-relaxed">
-            Tuyển tập các project tập trung vào nhận diện thương hiệu, bao bì, editorial và typography. Một số project là concept/personal project để thể hiện hướng xử lý và quy trình thiết kế.
+            Tuyển tập các dự án nhận diện thương hiệu, bao bì và ấn phẩm xuất bản. Các dự án nghiên cứu (Concept Project) và dự án cá nhân (Personal Project) được ghi chú rõ ràng nhằm minh chứng cho tư duy thiết kế và quy trình thực hiện.
           </p>
         </motion.div>
 
@@ -105,7 +105,7 @@ export const WorksPage: React.FC<WorksPageProps> = ({ onSelectProject, onNavigat
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tìm dự án, hạng mục..."
+                placeholder="Tìm dự án, khách hàng..."
                 className="w-full bg-[#083028] border border-[#082820] rounded-xl pl-9 pr-8 py-2 text-xs text-[#F8F8F8] placeholder-[#8caaa0] focus:outline-none focus:border-[#10b981]/50 transition-colors"
                 aria-label="Tìm kiếm dự án"
               />

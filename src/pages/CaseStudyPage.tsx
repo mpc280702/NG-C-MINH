@@ -77,7 +77,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
               {currentProject.projectTypeLabel}
             </span>
             <span aria-hidden="true">·</span>
-            <span>Loại dự án: {currentProject.client}</span>
+            <span>Khách hàng: {currentProject.client}</span>
             <span aria-hidden="true">·</span>
             <span className="tabular-nums">Năm {currentProject.year}</span>
           </div>
@@ -121,7 +121,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
             {/* Deliverables List */}
             <div className="p-6 rounded-2xl bg-[#083028] border border-[#003828] space-y-4 shadow-lg">
               <div className="text-xs font-mono uppercase tracking-wider text-[#8caaa0] font-bold">
-                Hạng Mục Thực Hiện
+                Hạng Mục Bàn Giao (Deliverables)
               </div>
               <ul className="space-y-2.5 text-xs sm:text-sm text-[#F8F8F8]">
                 {currentProject.deliverables.map((item, idx) => (
@@ -137,7 +137,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
             {currentProject.tokens && currentProject.tokens.length > 0 && (
               <div className="p-6 rounded-2xl bg-[#083028] border border-[#003828] space-y-4 shadow-lg">
                 <div className="text-xs font-mono uppercase tracking-wider text-[#8caaa0] font-bold">
-                  Màu Sắc &amp; Typography
+                  Bảng Màu &amp; Định Danh Thiết Kế
                 </div>
                 <div className="space-y-2.5">
                   {currentProject.tokens.map((token, idx) => (
@@ -169,7 +169,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
               <div className="p-7 rounded-2xl bg-[#083028] border border-[#003828] space-y-2.5 shadow-lg">
                 <div className="flex items-center gap-2 text-xs font-mono uppercase font-bold text-[#10b981]">
                   <Target className="w-4 h-4" />
-                  <span>01. Bối Cảnh &amp; Vấn Đề</span>
+                  <span>01. Thách Thức &amp; Bối Cảnh Thực Tế</span>
                 </div>
                 <p className="text-sm sm:text-base text-[#c0d3cb] leading-relaxed font-light">
                   {currentProject.problem}
@@ -182,7 +182,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
               <div className="p-7 rounded-2xl bg-[#083028] border border-[#003828] space-y-2.5 shadow-lg">
                 <div className="flex items-center gap-2 text-xs font-mono uppercase font-bold text-[#10b981]">
                   <Lightbulb className="w-4 h-4" />
-                  <span>02. Mục Tiêu</span>
+                  <span>02. Mục Tiêu Dự Án (Objective)</span>
                 </div>
                 <p className="text-sm sm:text-base text-[#c0d3cb] leading-relaxed font-light">
                   {currentProject.objective}
@@ -195,7 +195,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
               <div className="p-7 rounded-2xl bg-[#083028] border border-[#003828] space-y-3 shadow-lg">
                 <div className="flex items-center gap-2 text-xs font-mono uppercase font-bold text-[#10b981]">
                   <Compass className="w-4 h-4" />
-                  <span>03. Nghiên Cứu &amp; Định Hướng</span>
+                  <span>03. Nghiên Cứu &amp; Định Hướng Sáng Tạo</span>
                 </div>
                 {currentProject.research && (
                   <p className="text-sm sm:text-base text-[#c0d3cb] leading-relaxed font-light">
@@ -204,7 +204,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
                 )}
                 {currentProject.creativeDirection && (
                   <div className="p-3.5 rounded-xl bg-[#003028] border border-[#082820] text-xs font-mono text-[#10b981]">
-                    Creative Direction: {currentProject.creativeDirection}
+                    Định hướng chính: {currentProject.creativeDirection}
                   </div>
                 )}
               </div>
@@ -213,7 +213,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
             {/* 04. Solution & Execution */}
             <div className="p-7 rounded-2xl bg-[#083028] border border-[#003828] space-y-2.5 shadow-lg">
               <div className="text-xs font-mono uppercase font-bold text-[#10b981]">
-                04. Giải Pháp Thiết Kế
+                04. Giải Pháp Thiết Kế Thị Giác
               </div>
               <p className="text-sm sm:text-base text-[#c0d3cb] leading-relaxed font-light">
                 {currentProject.solution}
@@ -224,7 +224,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
             {currentProject.results && (
               <div className="p-7 rounded-2xl bg-[#003828] border border-[#10b981]/30 space-y-2.5 shadow-lg">
                 <div className="text-xs font-mono uppercase font-bold text-[#10b981]">
-                  05. Kết Quả Đầu Ra
+                  05. Kết Quả &amp; Đóng Góp Thực Tế
                 </div>
                 <p className="text-sm sm:text-base text-[#F8F8F8] leading-relaxed font-light">
                   {currentProject.results}
@@ -237,9 +237,14 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
         {/* Media Gallery */}
         {currentProject.gallery && currentProject.gallery.length > 0 && (
           <div className="space-y-6 pt-8 border-t border-[#083028]">
-            <h2 className="font-display font-bold text-2xl text-[#F8F8F8]">
-              Hình Ảnh &amp; Visual Tham Khảo
-            </h2>
+            <div className="flex items-center justify-between">
+              <h2 className="font-display font-bold text-2xl text-[#F8F8F8]">
+                Hình Ảnh Ấn Phẩm &amp; Visual Tham Khảo
+              </h2>
+              <span className="text-[11px] font-mono text-[#8caaa0]">
+                Concept &amp; Reference Specimen
+              </span>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {currentProject.gallery.map((media, idx) => (
                 <div
@@ -256,7 +261,7 @@ export const CaseStudyPage: React.FC<CaseStudyPageProps> = ({
                     />
                   </div>
                   <p className="text-xs font-mono text-[#8caaa0] italic">
-                    Ảnh {String(idx + 1).padStart(2, '0')} — {media.caption}
+                    Visual {String(idx + 1).padStart(2, '0')} — {media.caption} (Visual tham khảo)
                   </p>
                 </div>
               ))}

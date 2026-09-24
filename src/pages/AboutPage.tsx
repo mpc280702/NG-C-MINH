@@ -30,7 +30,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             Về Tôi &amp; Cách Tôi Thiết Kế
           </h1>
           <p className="mt-4 text-base sm:text-lg text-[#c0d3cb] font-light max-w-2xl leading-relaxed">
-            Graphic Designer tại Hà Nội, tập trung vào nhận diện thương hiệu, bao bì, ấn phẩm và hình ảnh digital. Tôi ưu tiên thiết kế rõ ràng, có hệ thống và phù hợp mục tiêu sử dụng.
+            Hiểu đúng vấn đề trước khi tạo visual. Thiết kế là sự cân bằng giữa cấu trúc (structure), nghệ thuật chữ (typography), hình ảnh (image) và tính ứng dụng thực tế (application).
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     CAO NGỌC MINH
                   </div>
                   <div className="text-[11px] text-[#c0d3cb]">
-                    Hà Nội, Việt Nam · Graphic Designer
+                    {DESIGNER_INFO.location} · {DESIGNER_INFO.role}
                   </div>
                 </div>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#003828] border border-[#10b981]/40 text-[#10b981] font-semibold">
@@ -74,7 +74,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               </div>
               <div className="flex items-center gap-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#10b981] shrink-0" />
-                <span>Sẵn sàng On-site tại Hà Nội &amp; Remote toàn quốc</span>
+                <span>Hình thức: {DESIGNER_INFO.workMode}</span>
               </div>
             </div>
           </div>
@@ -83,17 +83,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-7 space-y-8">
             <div>
               <h2 className="font-display font-black text-2xl sm:text-3xl text-[#F8F8F8] leading-snug">
-                "Thiết kế tốt không chỉ đẹp; nó phải rõ ràng, có lý do và dùng được trong thực tế."
+                "Thiết kế tốt bắt đầu từ việc thấu hiểu đúng bản chất vấn đề và mục tiêu thương hiệu."
               </h2>
               <div className="mt-6 space-y-4 text-sm sm:text-base text-[#c0d3cb] leading-relaxed font-light">
                 <p>
-                  Tôi tập trung vào bố cục, typography, hình ảnh và khả năng ứng dụng. Mỗi dự án bắt đầu từ việc hiểu nội dung, đối tượng và bối cảnh trước khi đi vào visual.
+                  Tôi tiếp cận thiết kế đồ họa với sự chú trọng cao vào tư duy cấu trúc, hệ thống nhận diện mạch lạc và tính chuẩn xác trong sản xuất. Với hơn {DESIGNER_INFO.experienceYears} năm thực hành trong các lĩnh vực nhận diện thương hiệu, bao bì và ấn phẩm truyền thông, tôi ưu tiên sự rõ ràng, dễ hiểu và nhất quán lâu dài.
                 </p>
                 <p>
-                  Tôi ưu tiên một hệ thống dễ đọc và dễ mở rộng: từ logo, màu sắc, typography đến layout và các phiên bản digital/in ấn. Khi cần, tôi phối hợp các chi tiết kỹ thuật để file thiết kế thuận tiện cho bước sản xuất.
+                  Bốn trụ cột chính trong phong cách thiết kế của tôi bao gồm: <strong>Cấu trúc (Structure)</strong> — xây dựng hệ thống lưới và tỷ lệ chặt chẽ; <strong>Chữ viết (Typography)</strong> — phân cấp thông tin rõ ràng và thẩm mỹ; <strong>Hình ảnh (Image)</strong> — chọn lọc ngôn ngữ thị giác phù hợp tệp khách hàng; và <strong>Ứng dụng (Application)</strong> — đảm bảo tính khả thi khi in ấn hoặc hiển thị kỹ thuật số.
                 </p>
                 <p>
-                  Ở giai đoạn bàn giao, tôi chú trọng cấu trúc file, phiên bản xuất và các thông tin cần thiết để người khác có thể tiếp tục sử dụng thiết kế mà không bị lệch hệ thống.
+                  Mọi dự án đều được đóng gói đầy đủ định dạng vector gốc, cẩm nang quy chuẩn sử dụng và hỗ trợ giải đáp kỹ thuật trong quá trình đưa vào vận hành thực tế.
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             {/* 5-Step Working Methodology */}
             <div className="pt-6 border-t border-[#083028] space-y-4">
               <div className="text-xs font-mono uppercase tracking-wider text-[#8caaa0] font-bold">
-                Quy Trình Làm Việc 5 Bước:
+                Quy Trình Triển Khai 5 Bước Chuẩn Mực:
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {DESIGN_PROCESS_STEPS.map((step) => (
@@ -125,24 +125,24 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             {/* Working Principles */}
             <div className="pt-6 border-t border-[#083028] space-y-4">
               <div className="text-xs font-mono uppercase tracking-wider text-[#8caaa0] font-bold">
-                Nguyên Tắc Làm Việc
+                Cam Kết &amp; Nguyên Tắc Hợp Tác
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#c0d3cb]">
                 <div className="flex items-start gap-2 p-3 rounded-lg bg-[#082820] border border-[#083028]">
                   <ShieldCheck className="w-4 h-4 text-[#10b981] shrink-0 mt-0.5" />
-                  <span>Bàn giao file theo đúng phạm vi và định dạng đã thống nhất</span>
+                  <span>Bàn giao 100% file gốc vector (.AI, .EPS, .PDF, .SVG)</span>
                 </div>
                 <div className="flex items-start gap-2 p-3 rounded-lg bg-[#082820] border border-[#083028]">
                   <Layers className="w-4 h-4 text-[#10b981] shrink-0 mt-0.5" />
-                  <span>Tổ chức file và guideline rõ ràng, dễ tiếp tục sử dụng</span>
+                  <span>Cung cấp cẩm nang Brand Guidelines rõ ràng, dễ ứng dụng</span>
                 </div>
                 <div className="flex items-start gap-2 p-3 rounded-lg bg-[#082820] border border-[#083028]">
                   <FileCheck className="w-4 h-4 text-[#10b981] shrink-0 mt-0.5" />
-                  <span>Trao đổi tiến độ và phản hồi theo từng mốc của dự án</span>
+                  <span>Đảm bảo đúng tiến độ bàn giao cam kết ban đầu</span>
                 </div>
                 <div className="flex items-start gap-2 p-3 rounded-lg bg-[#082820] border border-[#083028]">
                   <CheckCircle2 className="w-4 h-4 text-[#10b981] shrink-0 mt-0.5" />
-                  <span>Hỗ trợ trao đổi kỹ thuật trong phạm vi công việc đã thống nhất</span>
+                  <span>Hỗ trợ kỹ thuật in ấn và tư vấn chất liệu miễn phí</span>
                 </div>
               </div>
             </div>

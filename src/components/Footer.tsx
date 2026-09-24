@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </p>
             </button>
             <p className="text-xs text-[#c0d3cb] max-w-sm font-light leading-relaxed">
-              Brand Identity · Packaging · Editorial · Key Visual · Digital
+              Tập trung Brand Identity, Key Visual, Packaging, Editorial và ấn phẩm truyền thông.
             </p>
           </div>
 
@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="flex flex-wrap items-center gap-6">
             <div>
               <span className="text-[#8caaa0] uppercase">Vị trí: </span>
-              <span className="text-[#F8F8F8] font-semibold">Hà Nội (Việt Nam)</span>
+              <span className="text-[#F8F8F8] font-semibold">{DESIGNER_INFO.location}</span>
             </div>
             <div>
               <span className="text-[#8caaa0] uppercase">Hanoi Time: </span>
@@ -146,8 +146,8 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
             <div>
-              <span className="text-[#8caaa0] uppercase">Trạng thái: </span>
-              <span className="text-[#10b981] font-semibold">Sẵn sàng trao đổi</span>
+              <span className="text-[#8caaa0] uppercase">Hình thức: </span>
+              <span className="text-[#10b981] font-semibold">{DESIGNER_INFO.workMode}</span>
             </div>
           </div>
 
@@ -164,7 +164,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom copyright row */}
         <div className="pt-8 border-t border-[#083028] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#8caaa0]">
           <div>
-            © {new Date().getFullYear()} Cao Ngọc Minh. Toàn bộ hình ảnh &amp; thiết kế được bảo vệ bản quyền.
+            © {new Date().getFullYear()} Cao Ngọc Minh. Toàn bộ thiết kế và bản sắc hình ảnh được bảo lưu quyền tác giả.
           </div>
           <div className="flex items-center gap-3">
             <span>Visual system: Emerald / Forest</span>

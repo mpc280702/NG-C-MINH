@@ -29,8 +29,6 @@ jobs:
           node-version: 20
           cache: 'npm'
       - name: Install dependencies
-        # The current lockfile contains an optional esbuild peer mismatch with Vite 8.
-        # Use the lockfile deterministically while allowing npm to ignore that peer conflict.
         run: npm ci --legacy-peer-deps
       - name: Build
         run: npm run build
