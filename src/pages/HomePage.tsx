@@ -299,7 +299,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProject 
               Quy Trình Thiết Kế 5 Bước
             </h2>
             <p className="text-xs sm:text-sm text-[#c0d3cb] mt-3 font-light leading-relaxed">
-              Mỗi sản phẩm đều được phát triển qua quy trình chặt chẽ, từ nghiên cứu cốt lõi đến khi hoàn thiện file in ấn và giám sát thực tế.
+              Mỗi dự án đi từ brief đến concept, thiết kế, tinh chỉnh và bàn giao theo một quy trình rõ ràng.
             </p>
           </div>
 
